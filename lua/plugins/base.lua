@@ -18,10 +18,9 @@ return {
       }
     end,
   },
-  {
-    "Saghen/blink.cmp",
-    opts = function(_, opts)
-      opts.completion.menu.auto_show = false
-    end,
-  },
+  { "saghen/blink.cmp", opts = {
+    completion = {
+      menu = { auto_show = false },
+    },
+  } },
 }
