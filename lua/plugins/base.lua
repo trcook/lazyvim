@@ -32,6 +32,9 @@ return {
         menu = { auto_show = false },
         ghost_text = { enabled = false },
       },
+      keymap = {
+        ["<M-/>"] = { "show", "show_documentation", "hide_documentation" },
+      },
     },
   },
 }
