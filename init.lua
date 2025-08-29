@@ -4,4 +4,6 @@ require("config.lazy")
 -- vim.o.background = "dark"
 
 -- modify flash label so it is more legible, regardless of the theme.
-vim.api.nvim_set_hl(0, "FlashLabel", { fg = "#ffffff", bg = "#d20065" })
+-- snippet to inspect plugin -- temporary holding space for this
+-- vim.inspect(require("lazy.core.config").plugins["conform.nvim"])
+-- require("lazy.core.config").plugins['flash.nvim']

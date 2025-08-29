@@ -42,11 +42,22 @@ return {
     opts = {
       picker = {
         hidden = true,
-        explorer = {
-          hidden = false,
-          include = { "*" },
-        },
+        -- explorer = {
+        --   hidden = false,
+        --   include = { "*" },
+        -- },
       },
     },
+  },
+  {
+    "folke/flash.nvim",
+    opts = {},
+
+    config = function()
+      -- some config tasks
+      print("hello!!!")
+
+      vim.api.nvim_set_hl(0, "FlashLabel", { fg = "#ffffff", bg = "#d20065" })
+    end,
   },
 }
