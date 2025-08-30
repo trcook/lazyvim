@@ -7,7 +7,6 @@ map({ "i", "c" }, "kj", "<ESC>")
 map("n", ";", ":")
 map("i", "<M-f>", "<C-o>e")
 map("i", "<M-b>", "<C-o>b")
-
 map("i", "<C-k>", "<esc>ld$a")
 map("i", "<C-d>", "<del>")
 map({ "i", "n" }, "<C-e>", "<end>")
