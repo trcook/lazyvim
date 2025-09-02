@@ -42,16 +42,35 @@ return {
     opts = {
       picker = {
         hidden = true,
-        -- explorer = {
-        --   hidden = false,
-        --   include = { "*" },
-        -- },
+        explorer = {
+          --   hidden = false,
+          exclude = { ".venv" },
+        },
       },
     },
   },
   {
     "folke/flash.nvim",
-    opts = {},
+    opts = {
+      keys = {
+        {
+          "s",
+          mode = { "n", "x", "o" },
+          function()
+            require("flash").jump({
+              label = { after = { 0, 2 }, style = "overlay" },
+            })
+          end,
+          desc = "Flash",
+        },
+      },
+      modes = {
+        char = {
+          enabled = true,
+          highlight = { backdrop = true },
+        },
+      },
+    },
 
     config = function()
       -- some config tasks
@@ -59,5 +78,15 @@ return {
 
       vim.api.nvim_set_hl(0, "FlashLabel", { fg = "#ffffff", bg = "#d20065" })
     end,
+  },
+  {
+    {
+      "akinsho/bufferline.nvim",
+      opts = function(_, opts)
+        if (vim.g.colors_name or ""):find("catppuccin") then
+          opts.highlights = require("catppuccin.groups.integrations.bufferline").get_theme()
+        end
+      end,
+    },
   },
 }

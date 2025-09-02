@@ -27,15 +27,14 @@ end)
 
 map({ "i", "n" }, "<M-/>", vim.lsp.buf.signature_help, { desc = "get signature help" })
 map({ "i", "n" }, "<M-/>", vim.lsp.buf.hover)
-map({ "n" }, "<leader>x", vim.cmd.bdelete)
+map({ "n" }, "<leader>x", vim.cmd.bdelete, { desc = "close and remove buffer" })
 map("n", "<leader>fe", function()
   local current_file_dir = vim.fn.expand("%:p")
   local snacks = require("snacks/explorer")
   snacks.reveal({ file = current_file_dir })
 end, { desc = "Open Snacks Explorer at current buffer's directory" })
 
--- i don't like the way u does undo -- it makes it tooo easy to fat finger it. make it hyper -z
+map({ "v", "n" }, "q", "<esc>", { noremap = true, silent = true }) -- i don't like the way u does undo -- it makes it tooo easy to fat finger it. make it hyper -z
 -- 'D' here is for "super" need to configure this key in iterm.
-map({ "i", "n" }, "<D-z>", "<cmd>undo<cr>")
-map({ "i", "n" }, "<S-D-z>", "<cmd>redo<cr>")
-map({ "n" }, "u", "<Nop>")
+-- map({ "i", "n" }, "<D-z>", "<cmd>undo<cr>")
+-- map({ "i", "n" }, "<S-D-z>", "<cmd>redo<cr>")
