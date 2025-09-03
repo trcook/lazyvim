@@ -11,7 +11,7 @@ vim.o.background = "light"
 
 -- command to toggle virtual text on errors, which is helpful for files where there are lots of errors.
 ToggleVText = function()
-  textenabled = vim.diagnostic.config()["virtual_text"]
+  local textenabled = vim.diagnostic.config()["virtual_text"]
   if textenabled then
     vim.diagnostic.config({ virtual_text = false })
   else

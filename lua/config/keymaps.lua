@@ -4,6 +4,7 @@
 local map = vim.keymap.set
 local unmap = vim.keymap.del
 map({ "i", "c" }, "kj", "<ESC>")
+map({ "t" }, "kj", "<C-\\><C-n>")
 map("n", ";", ":")
 map("i", "<M-f>", "<C-o>e")
 map("i", "<M-b>", "<C-o>b")
