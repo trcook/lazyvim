@@ -8,7 +8,7 @@ map({ "t" }, "kj", "<C-\\><C-n>")
 map("n", ";", ":")
 map("i", "<M-f>", "<C-o>e")
 map("i", "<M-b>", "<C-o>b")
-map("i", "<C-k>", "<esc>ld$a")
+map("i", "<C-k>", "<esc>Di")
 map("i", "<C-d>", "<del>")
 map({ "i", "n" }, "<C-e>", "<end>")
 map({ "i", "n" }, "<C-a>", "<home>")
@@ -36,7 +36,4 @@ map("n", "<leader>fe", function()
   snacks.reveal({ file = current_file_dir })
 end, { desc = "Open Snacks Explorer at current buffer's directory" })
 
-map({ "v", "n" }, "q", "<esc>", { noremap = true, silent = true }) -- i don't like the way u does undo -- it makes it tooo easy to fat finger it. make it hyper -z
--- 'D' here is for "super" need to configure this key in iterm.
--- map({ "i", "n" }, "<D-z>", "<cmd>undo<cr>")
--- map({ "i", "n" }, "<S-D-z>", "<cmd>redo<cr>")
+map({ "n" }, "gq", "gw") -- needed to fix some nonsense where wrapping wasn't working
