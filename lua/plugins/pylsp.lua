@@ -53,6 +53,7 @@ return {
         -- options for vim.lsp.buf.format
         -- `bufnr` and `filter` is handled by the LazyVim formatter,
         -- but can be also overridden when specified
+        autoformat = false,
         format = {
           formatting_options = nil,
           timeout_ms = nil,
@@ -107,8 +108,10 @@ return {
               },
             },
           },
-          nextflow_ls = {cmd={"nextflow-language-server"},
-            settings= {nextflow={language_version="25.04"}}}
+          nextflow_ls = {
+            cmd = { "nextflow-language-server" },
+            settings = { nextflow = { language_version = "25.04" } },
+          },
         },
         -- you can do any additional lsp server setup here
         -- return true if you don't want this server to be setup with lspconfig

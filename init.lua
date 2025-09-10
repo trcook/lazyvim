@@ -19,3 +19,4 @@ ToggleVText = function()
   end
 end
 vim.api.nvim_create_user_command("Togglevtext", ToggleVText, {})
+vim.g.autoformat = false
