@@ -37,3 +37,11 @@ map("n", "<leader>fe", function()
 end, { desc = "Open Snacks Explorer at current buffer's directory" })
 
 map({ "n" }, "gq", "gw") -- needed to fix some nonsense where wrapping wasn't working
+
+
+if vim.g.vscode then
+  -- Example: map <leader>gg to open the source control panel in VS Code
+  map({"n"},"j","gj")
+  map({"n"},"k","gk")
+
+end
