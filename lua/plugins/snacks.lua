@@ -3,7 +3,10 @@
 return {
   {
     "snacks.nvim",
+    enabled=true,
     opts = {
+      explorer={enabled=false},
+      picker = {enabled=false},
       bigfile = { enabled = true },
       quickfile = { enabled = true },
       terminal = {

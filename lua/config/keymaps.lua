@@ -30,11 +30,13 @@ map({ "i", "n" }, "<M-/>", vim.lsp.buf.hover)
 map({ "n" }, "<leader>x", function()
   Snacks.bufdelete()
 end, { desc = "close and remove buffer" })
-map("n", "<leader>fe", function()
+map("n", "<leader>oe", function()
+  oil=require('oil')
   local current_file_dir = vim.fn.expand("%:p")
-  local snacks = require("snacks/explorer")
-  snacks.reveal({ file = current_file_dir })
-end, { desc = "Open Snacks Explorer at current buffer's directory" })
+  oil.open_float()
+  -- local snacks = require("snacks/explorer")
+  -- snacks.reveal({ file = current_file_dir })
+end, { desc = "OIL!" })
 
 map({ "n" }, "gq", "gw") -- needed to fix some nonsense where wrapping wasn't working
 
