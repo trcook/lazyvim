@@ -41,7 +41,8 @@ map({ "n" }, "gq", "gw") -- needed to fix some nonsense where wrapping wasn't wo
 
 if vim.g.vscode then
   -- Example: map <leader>gg to open the source control panel in VS Code
-  map({"n"},"j","gj")
-  map({"n"},"k","gk")
-
+vim.api.nvim_exec2("nmap j gj", {output=false})
+vim.api.nvim_exec2("nmap k gk", {output=false})
+  map("n","<C-d>","<PageDown>")
+  map("n","<C-u>","<PageUp>")
 end
