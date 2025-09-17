@@ -2,9 +2,10 @@ return {
   'stevearc/oil.nvim',
   ---@module 'oil'
   ---@type oil.SetupOpts
+
   opts = {
     keymaps={
-     ["q"] = { "actions.close", mode = "n" },
+     ["q"] = { "actions.close", mode = "n" }
     }
   },
   -- Optional dependencies

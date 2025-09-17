@@ -20,3 +20,5 @@ ToggleVText = function()
 end
 vim.api.nvim_create_user_command("Togglevtext", ToggleVText, {})
 vim.g.autoformat = false
+vim.g.lazyvim_picker="snacks"
+
