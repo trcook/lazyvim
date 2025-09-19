@@ -48,3 +48,6 @@ vim.api.nvim_exec2("nmap k gk", {output=false})
   map("n","<C-d>","<PageDown>")
   map("n","<C-u>","<PageUp>")
 end
+
+map("i","<M-C-h>", "<C-w>")
+map("i","<M-C-t>", "<C-d>")
