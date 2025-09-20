@@ -22,3 +22,7 @@ vim.api.nvim_create_user_command("Togglevtext", ToggleVText, {})
 vim.g.autoformat = false
 vim.g.lazyvim_picker="snacks"
 
+if vim.g.vscode then
+  -- Example: map <leader>gg to open the source control panel in VS Code
+  vim.opt.spell = false
+end
