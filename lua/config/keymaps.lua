@@ -13,8 +13,8 @@ map("i", "<C-d>", "<del>")
 map({ "i", "n" }, "<C-e>", "<end>")
 map({ "i", "n" }, "<C-a>", "<home>")
 
-map("i", "<C-f>", "<right>")
-map("i", "<C-b>", "<left>")
+map({"i","n"}, "<C-f>", "<right>")
+map({"i","n"}, "<C-b>", "<left>")
 map("i", "<C-n>", "<c-o>gj")
 map("i", "<C-p>", "<c-o>gk")
 map("i", "<C-h>", "<BS>")
@@ -51,3 +51,5 @@ end
 
 map("i","<M-C-h>", "<C-w>")
 map("i","<M-C-t>", "<C-d>")
+map('n', '<M-i>', '<C-i>', { noremap = true }) --move forward on jump list
+map("i","<M-d>","<Esc>ldei")

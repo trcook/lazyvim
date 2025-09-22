@@ -26,3 +26,11 @@ if vim.g.vscode then
   -- Example: map <leader>gg to open the source control panel in VS Code
   vim.opt.spell = false
 end
+if vim.g.colors_name=="nord" then
+  vim.o.background='dark'
+end
+
+-- if vim.env.TERM == 'xterm' then
+  -- vim.cmd([[autocmd UIEnter * if v:event.chan ==# 0 | call chansend(v:stderr, "\x1b[>1u") | endif]])
+  -- vim.cmd([[autocmd UILeave * if v:event.chan ==# 0 | call chansend(v:stderr, "\x1b[<1u") | endif]])
+-- end

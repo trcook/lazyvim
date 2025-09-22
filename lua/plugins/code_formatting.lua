@@ -8,6 +8,7 @@ return {
       format_on_save = false,
       formatters_by_ft = {
         json = {  "prettier", stop_after_first = true },
+        typst= {"prettypst",stop_after_first=true}
       },
     },
   },
