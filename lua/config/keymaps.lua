@@ -53,3 +53,4 @@ map("i","<M-C-h>", "<C-w>")
 map("i","<M-C-t>", "<C-d>")
 map('n', '<M-i>', '<C-i>', { noremap = true }) --move forward on jump list
 map("i","<M-d>","<Esc>ldei")
+map('n', '<C-S-]>', '/\\(#%%\\|# %%\\)<CR>j<ESC>', { noremap = true, silent = true })
