@@ -18,11 +18,13 @@ return {
           },
           py = {
             command = { "uv", "run", "ipython" },
+            -- command = {"europie-console","--graphics","iterm","--force-graphics"},
             format = require("iron.fts.common").bracketed_paste,
             block_dividers = { "# %%", "#%%" },
           },
           python = {
             command = { "uv", "run", "ipython" },
+            -- command = {"euporie-console","--graphics","iterm","--force-graphics"},
             format = require("iron.fts.common").bracketed_paste,
             block_dividers = { "# %%", "#%%" },
           },
