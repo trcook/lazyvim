@@ -24,3 +24,21 @@ if vim.g.vscode then
     end,
   })
 end
+--
+-- local function switch_theme_by_mode()
+--   local mode = vim.fn.mode()
+--   if mode == 'i' or mode == 'R' then -- Insert and Replace modes
+--     vim.opt.background = 'light'
+--   else
+--     vim.opt.background = 'dark'
+--   end
+--   vim.cmd('colorscheme catppuccin')
+-- end
+--
+-- vim.api.nvim_create_autocmd('ModeChanged', {
+--   pattern = {'i:*', 'n:*'},
+--   callback = switch_theme_by_mode
+-- })
+--
+-- -- Ensure the colorscheme is loaded on startup with the correct initial mode.
+-- vim.cmd('colorscheme catppuccin')

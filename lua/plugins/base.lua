@@ -12,7 +12,7 @@ return {
         function()
           vim.lsp.buf.signature_help()
         end,
-        mode = { "i", "n" },
+        mode = { "n" },
       }
     end,
     -- opts = { inlay_hints = { enabled = false } },

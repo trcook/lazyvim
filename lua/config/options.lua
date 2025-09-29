@@ -3,6 +3,7 @@
 -- Add any additional options here
 vim.opt.wrap = true
 vim.opt.breakindent = true
-vim.opt.breakindentopt = "shift:2" -- Optional: Add an extra 2 spaces of indentation
+vim.opt.breakindentopt = "shift:2" -- Optional: Add an extra 2 spaces of indentation -- This is an inset indent to make it easier to read soft-wrapped lines
 vim.opt.linebreak = true
+vim.opt.relativenumber=false
 return {}
