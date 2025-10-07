@@ -9,7 +9,7 @@ return {
           -- bg = "#000000",
           -- insert = "#403a2e",
         },
-        line_opacity = 0.15,
+        line_opacity = 0.35,
         set_cursor=false
       })
     end,
